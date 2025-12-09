@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+  <style>
+    body {
+      background-color: Green;
+      font-size: 20px;
+      color: White;
+      font-family: courier new;
+    }
+    
+    input {
+      background-color: White;
+      font-family: courier new;
+    }
+    
+    textarea {
+       background-color: White;
+       font-family: courier new;
+    }
+    
+    select {
+       background-color: White;
+       font-family: courier new;
+    }
+    
+    legend {
+      text-align: center;
+      font-family: courier new;
+    }
+    
+    button {
+      background-color: red;
+      color: black;
+      font-family: courier new;
+    }
+  </style>
+</head>
+
+<body>
+<form action="#" method="post" target="_blank">
+  
+  <fieldset>
+    <legend>Personal Information</legend>
+    <label for="fname" > First Name:</label><br>
+<input type="text" name="first
+-name" id="fname" placeholder
+="Enter Your First Name"
+required/><br><br>
+
+<label for="lname"> Last Name:</label><br>
+<input type="text" name="last
+-name" id="lname" placeholder
+="Enter Your Last Name"
+required/><br><br>
+
+<label for="age">Age:</label><br
+<input type="number" name="age"
+min="18" max="45"
+id="age"
+required/><br><br>
+
+<label for="pn">Phone Number:</label><br>
+<input type="tel" name="phone
+-number" id="pn" placeholder="+234..."
+required/><br><br>
+
+<label for="gender">Gender:</label><br>
+<label for="male">Male</label>
+<input type="radio" name
+="gender" id="male" value
+="male" checked/>
+<label for="female">Female</label>
+<input type="radio" name
+="gender" id="female" value
+="female"/><br><br>
+
+<label for="mail">Email Address:</label><br>
+<input type="email" name="email" id="mail" placeholder="Input Your Email Address"
+required/><br><br>
+
+<label for="pswd">Password</label><br>
+<input type="password" name="password" id="pswd" placeholder="At least 8 characters" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[@#$*?&%:]).{8,}" title="Must contain a letter(uppercase and lowercase), a symbol(@#$*?&%:), a number, and must be at least 8 characters long" required/>
+  </fieldset><br><br>
+  <fieldset>
+    <legend>Fun Questions</legend>
+    <label for="bday">When Is Your Birthday</label><br>
+    <input type="date" name="birthday" id="bday" /><br><br>
+    
+    <label for="continents">Which Continent Is Your Home Town Located In</label><br>
+    <select name="continents" id="continents">
+      <option value="" disabled selected>Choose Your Continent</option>
+      <option value="north-america">North America</option>
+      <option value="south-america">South America</option>
+      <option value="africa" >Africa</option>
+      <option value="europe">Europe</option>
+      <option value="asia">Asia</option>
+      <option value="australia">Australia</option>
+      <option value="antarctica">Antarctica</option>
+    </select><br><br>
+    
+    <label for="weather">What Is Your Favorite Weather</label><br>
+    <input type="checkbox" name="weather" id="rainy" value="rainy" />
+    <label for="rainy">Rainy 🌧️ </label>
+        <input type="checkbox" name="weather" id="sunny" value="sunny" />
+    <label for="sunny">Sunny 🌞 </label>
+        <input type="checkbox" name="weather" id="snowy" value="snowy"  checked/>
+    <label for="snowy">Snowy ❄️ </label><br><br>
+    
+    <label for="fcolor">What Is Your Favorite Color</label><br>
+    <input type="color" name="favcolor" id="fcolor" /><br><br>
+   
+   <label for="comment">What Do You Enjoy Doing During The Day</label><br>
+   <textarea name="comment" id="comment" rows="5" cols="30" placeholder="Leave Your Comment Here..."></textarea>
+  </fieldset><br><br>
+
+<button type="submit">Submit</button><br><br>
+</form>
+</body>
+</html>
